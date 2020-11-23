@@ -1,0 +1,116 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+/* VARIABLES CSS */
+:root {
+  /* Color */
+  --first-color: #272a3a;
+  --first-color-light: #8a8eaa;
+  --first-color-lighten: #f8f8fc;
+
+  /* Font and typography */
+  --body-font: "Roboto Mono", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.813;
+}
+
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--first-color-lighten);
+}
+
+h1 {
+  font-size: var(--normal-font-size);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* DRAP and DROP */
+.drop,
+.drop-container {
+  display: grid;
+}
+
+.drop {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-container {
+  row-gap: 1rem;
+  padding: 2rem;
+  box-shadow: 4px 4px 16px #e1e1e1;
+}
+
+.card,
+.card-data {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 360px;
+  justify-content: space-around;
+  padding: 0.75rem 1.25rem 0.75rem 0.75rem;
+  background-color: var(--first-color-lighten);
+  box-shadow: 4px 4px 16px #e1e1e1, -2px -2px 16px #fff;
+  border-radius: 2.5rem;
+}
+
+.card-data {
+  max-width: 210px;
+}
+
+.card .user {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.card .name {
+  color: var(--first-color);
+  font-weight: 500;
+}
+
+.card .profession {
+  color: var(--first-color-light);
+  font-size: var(--small-font-size);
+}
+
+.card .social {
+  margin: 0.175rem;
+  color: var(--first-color-light);
+  transition: 0.4s;
+}
+
+.card .social:hover {
+  color: var(--first-color);
+}
+
+/* Class name form the chosen item */
+.sortable-chosen {
+  box-shadow: 8px 8px 16px #e1e1e1;
+}
+
+/* Class name form the dragging item */
+.sortable-drag {
+  opacity: 0;
+}

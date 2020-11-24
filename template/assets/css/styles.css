@@ -1,19 +1,27 @@
 /* GOOGLE FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");*/
+
+@font-face {
+  font-family: RobotoMono;
+  src: url("../fonts/RobotoMono-Regular.ttf");
+}
+
 
 /* VARIABLES CSS */
 :root {
   /* Color */
-  --first-color: #;
-  --first-color-light: #;
-  --first-color-lighten: #;
+  --first-color: #fff;
+  --first-color-light: #fff;
+  --first-color-lighten: #fff;
 
   /* Font and typography */
-  --body-font: ;
-  --normal-font-size: ;
-  --small-font-size: ;
+  --body-font: RobotoMono;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.813;
 }
 
 /* BASE */
-
+body {
+  font-family: var(--body-font);
+}
 /*  */

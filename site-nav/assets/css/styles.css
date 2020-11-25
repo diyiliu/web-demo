@@ -154,6 +154,7 @@ ul {
 .nav-list a {
   display: inline-block;
   font-size: var(--middle-font-size);
+  color: var(--backgroud-color);
   padding: 0.315rem 1.5rem;
   border-radius: 0.215rem;
   opacity: 0.815;

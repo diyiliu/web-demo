@@ -1,259 +1,284 @@
 /* VARIABLES CSS */
 :root {
-  /* Color */
-  --first-color: #1f2023;
-  --first-color-dark: #343436;
-  --first-color-light: #878787;
-  --first-color-lighten: #555555;
+    /* Color */
+    --first-color: #1f2023;
+    --first-color-dark: #343436;
+    --first-color-light: #878787;
+    --first-color-lighten: #555555;
 
-  --second-color: #f3f3f3;
-  --second-color-light: #f7f7f7;
+    --second-color: #f3f3f3;
+    --second-color-light: #f7f7f7;
 
-  /* Font and typography */
-  --body-font: "Sans", sans-serif;
-  --large-font-size: 1.175rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.813rem;
+    /* Font and typography */
+    --body-font: "Sans", sans-serif;
+    --large-font-size: 1.175rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
 }
 
 /* BASE */
 *,
 ::before,
 ::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: var(--body-font);
-  color: var(--first-color-lighten);
-  background-color: var(--second-color);
+    font-family: var(--body-font);
+    color: var(--first-color-lighten);
+    background-color: var(--second-color);
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: var(--first-color-light);
-  font-size: var(--large-font-size);
+    color: var(--first-color-light);
+    font-size: var(--large-font-size);
 }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: var(--first-color-light);
-  font-size: var(--large-font-size);
+    color: var(--first-color-light);
+    font-size: var(--large-font-size);
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: var(--first-color-light);
-  font-size: var(--large-font-size);
+    color: var(--first-color-light);
+    font-size: var(--large-font-size);
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: var(--first-color-light);
-  font-size: var(--large-font-size);
+    color: var(--first-color-light);
+    font-size: var(--large-font-size);
 }
 
 /* main */
 .main {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .container,
 .head {
-  max-width: 1280px;
-  margin: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 /* head */
 header {
-  background-color: #fff;
-  box-shadow: 0 5px 8px -4px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    box-shadow: 0 5px 8px -4px rgba(0, 0, 0, 0.08);
 }
 
 header .head {
-  padding: 24px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .head .logo {
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--first-color-dark);
-  color: var(--first-color-dark);
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--first-color-dark);
+    color: var(--first-color-dark);
+    cursor: pointer;
 }
 
 .head .logo:hover {
-  box-shadow: 0 4px 8px var(--first-color-light);
+    box-shadow: 0 4px 8px var(--first-color-light);
 }
 
 .logo h1 {
-  font-family: "Montserrat", "Open Sans", sans-serif;
-  font-size: var(--large-font-size);
-  color: var(--first-color-dark);
-  font-weight: 500;
-  letter-spacing: 3px;
-  margin-left: 15px;
-  margin-right: 15px;
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-size: var(--large-font-size);
+    color: var(--first-color-dark);
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .logo .img {
-  width: 42px;
-  height: 42px;
-  border-left: 1px solid var(--first-color-dark);
+    width: 42px;
+    height: 42px;
+    border-left: 1px solid var(--first-color-dark);
 }
 
 .logo img {
-  width: 100%;
-  height: 100%;
-  transform: scale(0.75);
+    width: 100%;
+    height: 100%;
+    transform: scale(0.75);
 }
 
 .search input {
-  width: 380px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--first-color-lighten);
-  font-size: var(--large-font-size);
-  color: var(--first-color-lighten);
-  opacity: 0.8;
+    width: 380px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--first-color-lighten);
+    font-size: var(--large-font-size);
+    color: var(--first-color-lighten);
+    opacity: 0.8;
 }
 
 .search .sub {
-  display: inline-block;
-  width: 26px;
-  height: 26px;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
 }
 
 .search .sub img {
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* container */
 .container {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 /* portfolio */
 .container .portfolio {
-  margin: 40px 0;
-  display: flex;
-  color: var(--first-color-light);
-  font-size: var(--normal-font-size);
-  font-weight: 600;
+    margin: 40px 0;
+    display: flex;
+    color: var(--first-color-light);
+    font-size: var(--normal-font-size);
+    font-weight: 600;
 }
 
 .portfolio ul {
-  display: flex;
+    display: flex;
 }
 
 .portfolio ul li {
-  position: relative;
-  margin: 0 25px;
-  padding: 3px 0;
+    position: relative;
+    margin: 0 25px;
+    padding: 3px 0;
 }
 
 .portfolio ul a {
-  color: var(--first-color-lighten);
+    color: var(--first-color-lighten);
 }
 
 .portfolio ul a:hover,
 .portfolio ul .active a {
-  color: var(--first-color-light);
+    color: var(--first-color-light);
 }
 
 .portfolio ul .active::before {
-  position: absolute;
-  top: -5px;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: var(--first-color-light);
+    position: absolute;
+    top: -5px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--first-color-light);
 }
 
 /* card-list */
 .card-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-between;
-  grid-column-gap: 40px;
-  grid-row-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
 }
 
 .card-list .card {
-  min-width: 210px;
-  background-color: rgba(0, 0, 0, 0.08);
-  display: flex;
-  align-items: center;
-  padding: 15px 20px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: 1px dotted #ddd;
+    min-width: 210px;
+    background-color: rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px dotted #ddd;
 }
 
 .card-list .card:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 8px var(--first-color-light);
-  border-color: var(--second-color);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 8px var(--first-color-light);
+    border-color: var(--second-color);
 }
 
 .card .icon {
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
 }
 
 .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card-data h3 {
-  color: var(--first-color-dark);
-  font-size: var(--normal-font-size);
+    color: var(--first-color-dark);
+    font-size: var(--normal-font-size);
 }
 
 .card-data p {
-  margin-top: 8px;
-  font-size: var(--small-font-size);
+    margin-top: 8px;
+    font-size: var(--small-font-size);
+}
+
+/* site-footer */
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    background: #343436;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-footer .site-info {
+    background: #38383a;
+    color: #adadad;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.site-footer a {
+    color: #fff;
 }
 
 @media screen and (max-width: 992px) {
-  .container,
-  .head {
-    max-width: 768px;
-  }
+    .container,
+    .head {
+        max-width: 768px;
+    }
 
-  .card-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .card-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .container,
-  .head {
-    max-width: 596px;
-  }
+    .container,
+    .head {
+        max-width: 596px;
+    }
 
-  .search input {
-    width: 180px;
-  }
+    .search input {
+        width: 180px;
+    }
 
-  .card-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .card-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
